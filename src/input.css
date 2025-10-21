@@ -48,7 +48,7 @@ html {
   @apply translate-x-5 translate-y-5;
 }
 .navScrolled {
-  @apply translate-y-5 -translate-x-5 bg-accent/70 backdrop-blur-sm border-1 border-solid border-primary rounded-3xl lg:h-full px-2.5;
+  @apply translate-y-5 -translate-x-5 bg-accent/80 backdrop-blur-sm border-1 border-solid border-primary rounded-3xl lg:rounded-full px-2.5;
 }
 
 .tm-card {
