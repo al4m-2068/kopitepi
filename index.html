@@ -164,18 +164,20 @@
     <!-- SEJARAH: HIBBAN (JANGAN DIGANGGU) -->
     <section
       id="tentang"
-      class="min-h-screen flex sm:flex-row flex-col bg-secondary2"
+      class="min-h-screen flex sm:flex-row flex-col bg-primary lg:bg-secondary2"
     >
-      <div class="w-[456px] xl:w-1/2 self-stretch p-[30px] pr-0 shrink-0">
+      <div
+        class="w-full aspect-square lg:w-[456px] xl:w-1/2 self-stretch p-[30px] lg:pr-0 shrink-0"
+      >
         <img
           src="src/images/baristas.jpg"
           alt="duapria"
           class="w-full h-full rounded-2xl object-cover"
         />
       </div>
-      <div class="px-20 self-stretch">
+      <div class="lg:px-20 self-stretch">
         <div
-          class="bg-primary text-center flex flex-col items-center justify-center px-6 h-full w-full"
+          class="bg-primary text-center flex flex-col items-center justify-center p-6 lg:px-6 h-max lg:h-full w-full"
         >
           <h1 class="text-xl font-bold text-accent uppercase mb-[10px]">
             Tentang
@@ -204,17 +206,16 @@
     </section>
 
     <!-- MENU KEPI: BARRA (JANGAN DIGANGGU) -->
-    <div
-      id="menu"
-      class="min-h-screen grid grid-cols-1 md:grid-cols-2 h-full w-full"
-    >
-      <div class="grid grid-cols-2 gap-4 p-10">
+    <div id="menu" class="min-h-screen flex flex-col lg:flex-row h-full w-full">
+      <div class="grid grid-cols-2 gap-4 p-5 lg:p-10 order-2 lg:order-1">
         <div class="menu-item mainMenu" onclick="changeImage('kuat', this)">
           <div>
-            <h2 class="font-bold text-lg uppercase">Kepi</h2>
-            <h1 class="text-2xl uppercase font-bold">Kuat</h1>
+            <h2 class="font-bold text-base lg:text-lg uppercase">Kepi</h2>
+            <h1 class="text-lg lg:text-2xl uppercase font-bold">Kuat</h1>
           </div>
-          <p class="text-sm active:!text-white group-hover:!text-white">
+          <p
+            class="text-xs line-clamp-2 lg:text-sm active:!text-white group-hover:!text-white"
+          >
             Kepi’s original blend
           </p>
           <p
@@ -226,10 +227,10 @@
 
         <div class="menu-item" onclick="changeImage('semangat', this)">
           <div>
-            <h2 class="font-bold text-lg uppercase">Kepi</h2>
-            <h1 class="text-2xl uppercase font-bold">Semangat</h1>
+            <h2 class="font-bold text-base lg:text-lg uppercase">Kepi</h2>
+            <h1 class="text-lg lg:text-2xl uppercase font-bold">Semangat</h1>
           </div>
-          <p class="text-sm group-hover:!text-white">
+          <p class="text-xs line-clamp-2 lg:text-sm group-hover:!text-white">
             Less strong from Kepi Kuat
           </p>
           <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
@@ -237,10 +238,10 @@
 
         <div class="menu-item" onclick="changeImage('capcin', this)">
           <div>
-            <h2 class="font-bold text-lg uppercase">Kepi</h2>
-            <h1 class="text-2xl uppercase font-bold">Capcin</h1>
+            <h2 class="font-bold text-base lg:text-lg uppercase">Kepi</h2>
+            <h1 class="text-lg lg:text-2xl uppercase font-bold">Capcin</h1>
           </div>
-          <p class="text-sm group-hover:!text-white">
+          <p class="text-xs line-clamp-2 lg:text-sm group-hover:!text-white">
             Kepi Cappuccino blend with Cincau
           </p>
           <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
@@ -248,10 +249,10 @@
 
         <div class="menu-item" onclick="changeImage('latte', this)">
           <div>
-            <h2 class="font-bold text-lg uppercase">Kepi</h2>
-            <h1 class="text-2xl uppercase font-bold">Latte</h1>
+            <h2 class="font-bold text-base lg:text-lg uppercase">Kepi</h2>
+            <h1 class="text-lg lg:text-2xl uppercase font-bold">Latte</h1>
           </div>
-          <p class="text-sm group-hover:!text-white">
+          <p class="text-xs line-clamp-2 lg:text-sm group-hover:!text-white">
             Smoothly relaxing and keeps you on at work
           </p>
           <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
@@ -259,10 +260,10 @@
 
         <div class="menu-item" onclick="changeImage('aren', this)">
           <div>
-            <h2 class="font-bold text-lg uppercase">Kepi</h2>
-            <h1 class="text-2xl uppercase font-bold">Aren</h1>
+            <h2 class="font-bold text-base lg:text-lg uppercase">Kepi</h2>
+            <h1 class="text-lg lg:text-2xl uppercase font-bold">Aren</h1>
           </div>
-          <p class="text-sm group-hover:!text-white">
+          <p class="text-xs line-clamp-2 lg:text-sm group-hover:!text-white">
             Kepi with Aren sugar sauce and jelly
           </p>
           <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
@@ -273,7 +274,7 @@
             <h2 class="font-bold text-lg uppercase">Kepi</h2>
             <h1 class="text-2xl uppercase font-bold">Gayo</h1>
           </div>
-          <p class="text-sm group-hover:!text-white">
+          <p class="text-xs line-clamp-2 lg:text-sm group-hover:!text-white">
             Kepi’s blend with Indonesian local Gayo taste
           </p>
           <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
@@ -284,7 +285,7 @@
             <h2 class="font-bold text-lg uppercase">Kepi</h2>
             <h1 class="text-2xl uppercase font-bold">Matcha</h1>
           </div>
-          <p class="text-sm group-hover:!text-white">
+          <p class="text-xs line-clamp-2 lg:text-sm group-hover:!text-white">
             Kepi with original Matcha powder
           </p>
           <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
@@ -295,21 +296,23 @@
             <h2 class="font-bold text-lg uppercase">Kepi</h2>
             <h1 class="text-2xl uppercase font-bold">Fresh Latte</h1>
           </div>
-          <p class="text-sm group-hover:!text-white">
+          <p class="text-xs line-clamp-2 lg:text-sm group-hover:!text-white">
             Kepi’s blend with Mint leaves extract
           </p>
           <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
         </div>
       </div>
 
-      <div class="flex justify-self-stretch justify-center">
+      <div
+        class="flex justify-self-stretch justify-center order-1 sticky top-0 lg:static lg:order-2"
+      >
         <div class="flex flex-col items-start justify-start relative w-full">
           <span
             class="w-full absolute flex items-center gap-2.5 top-[30px] right-0 text-primary"
           >
             <span class="lines-full border-primary"></span>
             <h1
-              class="text-[100px] text-box-trimmed font-bold font-wst shrink-0 uppercase"
+              class="text-[60px] lg:text-[100px] text-box-trimmed font-bold font-wst shrink-0 uppercase"
             >
               Menu Kepi
             </h1>
@@ -319,7 +322,7 @@
             id="menuImage"
             src="src/images/k_kuat.png"
             alt="Menu Image"
-            class="w-full h-full object-cover transition-opacity duration-200"
+            class="w-full h-[90%] rounded-b-2xl lg:rounded-none object-cover transition-opacity duration-200"
           />
         </div>
       </div>
