@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KopiTepi | Menepi, hilangkan distraksi.</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="shortcut icon" href="/src/images/kt-o-light.png" />
+  </head>
+  <body
+    class="bg-primary text-secondary bg-[url('/src/images/kepi-bgwatermark.png')] bg-fixed bg-repeat bg-watermark font-sts"
+  >
+    <!-- HEADER: ALBAR (JANGAN DIGANGGU) -->
+    <header class="z-[999] navbar relative">
+      <a
+        href="index.html"
+        class="transition-all px-3 aspect-square lg:px-[30px] h-[60px] flex items-center justify-center bg-accent/70 backdrop-blur-sm rounded-full border-1 border-solid border-primary opacity-0"
+      >
+        <img
+          src="/src/images/kepi_light.png"
+          alt="nav-kepi-logo"
+          class="h-[30px] hidden lg:block"
+        />
+        <img
+          src="src/images/kt-light.png"
+          alt="nav-kepi-logo"
+          class="h-[30px] block lg:hidden"
+        />
+      </a>
+      <nav class="navHp transition-all flex flex-col lg:flex-row items-center">
+        <ul class="lg:flex font-bold h-[60px] text-primary hidden">
+          <li>
+            <a
+              href="#tentang"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Tentang</a
+            >
+          </li>
+          <li>
+            <a
+              href="#menu"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Menu Kepi</a
+            >
+          </li>
+          <li>
+            <a
+              href="#kata-sahabat"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Kata Sahabat Tepi</a
+            >
+          </li>
+          <li>
+            <a
+              href="#lokasi"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Our Locations</a
+            >
+          </li>
+        </ul>
+        <button class="text-primary lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+          </svg>
+        </button>
+        <ul
+          class="flex flex-col font-bold h-max text-primary lg:hidden absolute top-0 left-0"
+        >
+          <li>
+            <a
+              href="#tentang"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Tentang</a
+            >
+          </li>
+          <li>
+            <a
+              href="#menu"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Menu Kepi</a
+            >
+          </li>
+          <li>
+            <a
+              href="#kata-sahabat"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Kata Sahabat Tepi</a
+            >
+          </li>
+          <li>
+            <a
+              href="#lokasi"
+              class="transition-all flex items-center px-2.5 h-full hover:scale-105 hover:rotate-2"
+              >Our Locations</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO: HIBBAN (JANGAN DIGANGGU) -->
+    <section
+      id="hero"
+      class="relative h-screen flex lg:flex-row flex-col items-center justify-between gap-7 lg:bg-primary"
+    >
+      <div
+        class="lg:hidden absolute w-full h-full top-0 left-0 bg-black/40"
+      ></div>
+      <div
+        class="flex flex-col h-screen p-[30px] pb-[50px] lg:pb-[30px] text-center items-end lg:items-start justify-end lg:justify-between sm:text-start w-full lg:w-[475px] text-primary sm:text-secondary bg-[url('/src/images/pengopitepi.jpg')] lg:bg-none bg-cover bg-center shrink-0"
+      >
+        <img
+          class="hidden lg:block transition-[opacity] duration-300"
+          src="src/images/kepi_original.png"
+          alt="logoBigTepi"
+        />
+        <div
+          class="flex flex-col items-center lg:items-start justify-end lg:justify-center gap-3.5 h-full w-full z-[2]"
+        >
+          <h1 class="font-bold text-[30px] sm:text-[45px]">
+            Nepi dan ngopi di KopiTepi, mampu hilangkan distraksi bikin fokus
+            kejar prestasi.
+          </h1>
+          <p class="font-normal text-base sm:text-[18px]">
+            Pengalaman lebih dari N tahun dalam menyajikan kopi susu yang bikin
+            kamu gak ngantuk seharian!
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="#lokasi"
+              class="bg-accent lg:bg-secondary hover:bg-secondary lg:hover:bg-accent hover:translate-y-2 text-[20px] text-primary py-2.5 px-5 w rounded-full text-center mt-[16px] text-xl font-bold flex items-center gap-2.5 transition-[background-color,transform] duration-100"
+            >
+              Lokasi<span class="text-box-trimmed">↓</span>
+            </a>
+            <a
+              href="#menu"
+              class="bg-accent lg:bg-secondary hover:bg-secondary lg:hover:bg-accent hover:translate-y-2 text-[20px] text-primary py-2.5 px-5 w rounded-full text-center mt-[16px] text-xl font-bold flex items-center gap-2.5 transition-[background-color,transform] duration-100"
+            >
+              Menu<span class="text-box-trimmed">↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <img
+        class="w-full h-full object-cover hidden lg:block"
+        src="src/images/pengopitepi.jpg"
+        alt="Mamas Baju Biru"
+      />
+    </section>
+
+    <!-- SEJARAH: HIBBAN (JANGAN DIGANGGU) -->
+    <section
+      id="tentang"
+      class="min-h-screen flex sm:flex-row flex-col bg-secondary2"
+    >
+      <div class="w-[456px] xl:w-1/2 self-stretch p-[30px] pr-0 shrink-0">
+        <img
+          src="src/images/baristas.jpg"
+          alt="duapria"
+          class="w-full h-full rounded-2xl object-cover"
+        />
+      </div>
+      <div class="px-20 self-stretch">
+        <div
+          class="bg-primary text-center flex flex-col items-center justify-center px-6 h-full w-full"
+        >
+          <h1 class="text-xl font-bold text-accent uppercase mb-[10px]">
+            Tentang
+          </h1>
+          <h2
+            class="text-[100px] -tracking-wide font-wst text-box-trimmed border-y-2 py-5 border-secondary uppercase mb-[30px]"
+          >
+            Sejarah Kepi
+          </h2>
+          <div class="text-lg">
+            <p class="mb-5">
+              KopiTepi bermula dari sepasang coffee lover yang berantusias
+              membuka kedai kopi di Jakarta. Pemilik adalah penemu racikan kopi
+              susu khas yang diakui kelegitan dan rasa kopi-nya yang
+              ber-kekuatan.
+            </p>
+            <p>
+              KopiTepi telah berkhidmat lebih dari N tahun dalam menyajikan kopi
+              susu dengan singkatan “Kepi” untuk ribuan pekerja, mahasiswa,
+              serta masyarakat Indonesia. Mereka mengakui bahwa KopiTepi: “bikin
+              melek seharian”.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU KEPI: BARRA (JANGAN DIGANGGU) -->
+    <div
+      id="menu"
+      class="min-h-screen grid grid-cols-1 md:grid-cols-2 h-full w-full"
+    >
+      <div class="grid grid-cols-2 gap-4 p-10">
+        <div class="menu-item mainMenu" onclick="changeImage('kuat', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Kuat</h1>
+          </div>
+          <p class="text-sm active:!text-white group-hover:!text-white">
+            Kepi’s original blend
+          </p>
+          <p
+            class="font-bold mt-2 text-xl active:!text-white group-hover:!text-white"
+          >
+            20K
+          </p>
+        </div>
+
+        <div class="menu-item" onclick="changeImage('semangat', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Semangat</h1>
+          </div>
+          <p class="text-sm group-hover:!text-white">
+            Less strong from Kepi Kuat
+          </p>
+          <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
+        </div>
+
+        <div class="menu-item" onclick="changeImage('capcin', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Capcin</h1>
+          </div>
+          <p class="text-sm group-hover:!text-white">
+            Kepi Cappuccino blend with Cincau
+          </p>
+          <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
+        </div>
+
+        <div class="menu-item" onclick="changeImage('latte', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Latte</h1>
+          </div>
+          <p class="text-sm group-hover:!text-white">
+            Smoothly relaxing and keeps you on at work
+          </p>
+          <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
+        </div>
+
+        <div class="menu-item" onclick="changeImage('aren', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Aren</h1>
+          </div>
+          <p class="text-sm group-hover:!text-white">
+            Kepi with Aren sugar sauce and jelly
+          </p>
+          <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
+        </div>
+
+        <div class="menu-item" onclick="changeImage('gayo', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Gayo</h1>
+          </div>
+          <p class="text-sm group-hover:!text-white">
+            Kepi’s blend with Indonesian local Gayo taste
+          </p>
+          <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
+        </div>
+
+        <div class="menu-item" onclick="changeImage('matcha', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Matcha</h1>
+          </div>
+          <p class="text-sm group-hover:!text-white">
+            Kepi with original Matcha powder
+          </p>
+          <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
+        </div>
+
+        <div class="menu-item" onclick="changeImage('freshlatte', this)">
+          <div>
+            <h2 class="font-bold text-lg uppercase">Kepi</h2>
+            <h1 class="text-2xl uppercase font-bold">Fresh Latte</h1>
+          </div>
+          <p class="text-sm group-hover:!text-white">
+            Kepi’s blend with Mint leaves extract
+          </p>
+          <p class="font-bold mt-2 text-xl group-hover:!text-white">20K</p>
+        </div>
+      </div>
+
+      <div class="flex justify-self-stretch justify-center">
+        <div class="flex flex-col items-start justify-start relative w-full">
+          <span
+            class="w-full absolute flex items-center gap-2.5 top-[30px] right-0 text-primary"
+          >
+            <span class="lines-full border-primary"></span>
+            <h1
+              class="text-[100px] text-box-trimmed font-bold font-wst shrink-0 uppercase"
+            >
+              Menu Kepi
+            </h1>
+            <span class="w-5 border-1 border-solid border-primary"></span>
+          </span>
+          <img
+            id="menuImage"
+            src="src/images/k_kuat.png"
+            alt="Menu Image"
+            class="w-full h-full object-cover transition-opacity duration-200"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONI: ALBAR (JANGAN DIGANGGU) -->
+    <section
+      id="kata-sahabat"
+      class="w-full flex flex-col bg-accent pt-[30px] lg:pt-10 gap-y-[30px]"
+    >
+      <div
+        class="text-center text-primary flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-5 lg:gap-[10px] w-full"
+      >
+        <span class="hidden lg:block lines-edge"></span>
+        <h1
+          class="font-wst lg:text-[115px] text-[60px] text-box-trimmed flex-shrink-0"
+        >
+          Kata Sahabat Tepi
+        </h1>
+        <span class="lines-full"></span>
+        <p
+          class="font-sts uppercase tracking-geser font-bold -mr-2.5 text-primary/50 flex-shrink-0"
+        >
+          ← Geser →
+        </p>
+        <span class="hidden lg:block lines-edge"></span>
+      </div>
+      <div
+        class="pt-[100px] -mt-[50px] pb-20 -mb-10 flex gap-2.2 px-main overflow-x-auto overflow-y-visible scrollbar-hide"
+      >
+        <div class="tm-card font-sts text-secondary">
+          <img
+            src="/src/images/person4-bg.png"
+            class="object-cover h-[197px] w-[278px] -mt-tmimg border-b-1 border-solid border-secondary/50"
+            alt=""
+          />
+          <p class="tm-text">
+            “Sering kecewa dengan latte yang encer. Tapi di Kopi Tepi, Kepi
+            Latte dan Kepi Cappuccino dibuat sempurna—susu creamy tapi rasa kopi
+            yang kuat tetap terasa di lidah. Pelayanan cepat dan latte art-nya
+            cantik.”
+          </p>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-bold">Bernard</h1>
+            <h2 class="text-lg">Pebisnis</h2>
+          </div>
+        </div>
+        <div class="tm-card font-sts text-secondary">
+          <img
+            src="/src/images/mahmud-bg.png"
+            class="object-cover h-[197px] w-[278px] -mt-tmimg border-b-1 border-solid border-secondary/50"
+            alt=""
+          />
+          <p class="tm-text">
+            “Saya tidak bisa mulai hari tanpa kopi yang benar-benar kuat. Kepi
+            Kuat adalah andalan saya. Rasanya bold, pahitnya pas, dan langsung
+            memberi energi. Suasana kafe yang nyaman juga mendukung
+            produktivitas. Best spot to work!”
+          </p>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-bold">Naufal</h1>
+            <h2 class="text-lg">Mahasiswa</h2>
+          </div>
+        </div>
+        <div class="tm-card font-sts text-secondary">
+          <img
+            src="/src/images/person3-bg.png"
+            class="object-cover h-[197px] w-[278px] -mt-tmimg border-b-1 border-solid border-secondary/50"
+            alt=""
+          />
+          <p class="tm-text">
+            “Salut pada Kopi Tepi karena menawarkan dua level: Kepi Kuat untuk
+            boost maksimal, dan Kepi Semangat yang lebih smooth tapi tetap
+            berkarakter. Kualitas biji kopinya top, harganya terjangkau. Tidak
+            pernah salah pilih di sini.”
+          </p>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-bold">Baraka</h1>
+            <h2 class="text-lg">Santri</h2>
+          </div>
+        </div>
+        <div class="tm-card font-sts text-secondary">
+          <img
+            src="/src/images/baraka-bg.png"
+            class="object-cover h-[197px] w-[278px] -mt-tmimg border-b-1 border-solid border-secondary/50"
+            alt=""
+          />
+          <p class="tm-text">
+            “Saya suka yang manis, tapi tidak mau kopi yang "hilang" rasanya.
+            Kepi Aren solusinya! Gula arennya balance, justru memperkuat
+            aftertaste kopi yang khas. Tempatnya juga adem, cocok buat ngobrol
+            santai.”
+          </p>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-bold">Jonnathan</h1>
+            <h2 class="text-lg">Mahasiswa</h2>
+          </div>
+        </div>
+        <div class="tm-card font-sts text-secondary">
+          <img
+            src="/src/images/mahmud-bg.png"
+            class="object-cover h-[197px] w-[278px] -mt-tmimg border-b-1 border-solid border-secondary/50"
+            alt=""
+          />
+          <p class="tm-text">
+            “Konsistensi Kopi Tepi luar biasa. Mau pesan Kepi Kuat atau mencoba
+            Kepi Matcha saat sedang bosan, kualitasnya selalu terjaga.
+            Matcha-nya otentik dan tidak terlalu manis. Tempat ini tidak pernah
+            gagal.”
+          </p>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-bold">Zain</h1>
+            <h2 class="text-lg">CEO Cafeyuu</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOKASI: ALBAR (JANGAN DIGANGGU) -->
+    <section
+      id="lokasi"
+      class="w-full flex flex-col items-center gap-6 pt-[50px] font-sts text-secondary"
+    >
+      <div class="flex flex-col items-center lg:flex-row gap-[15px]">
+        <h1 class="text-[40px] font-bold">Yuk, menepi ke</h1>
+        <img src="/src/images/kepi_original.png" alt="" class="h-[60px]" />
+        <p
+          class="lg:hidden font-sts uppercase tracking-geser font-bold -mr-2.5 text-secondary/50 flex-shrink-0"
+        >
+          ← Geser →
+        </p>
+      </div>
+      <div
+        class="pl-14 w-full overflow-x-auto overflow-y-visible scrollbar-hide flex py-7 -mt-2 last:mr-0"
+      >
+        <a href="">
+          <div class="lc-card rotate-5">
+            <img
+              src="/src/images/gambir.png"
+              alt=""
+              class="w-full h-[300px] object-cover"
+            />
+            <div class="flex flex-col p-[15px] text-center gap-2.2">
+              <h1 class="text-2xl font-bold">Kepi sbr. Stasiun Gambir</h1>
+              <p class="text-base">
+                Jl. Medan Merdeka Tim. No.1, Gambir, Kecamatan Gambir, Kota
+                Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="lc-card">
+            <img
+              src="/src/images/bmplaz.png"
+              alt=""
+              class="w-full h-[300px] object-cover"
+            />
+            <div class="flex flex-col p-[15px] text-center gap-2.2">
+              <h1 class="text-2xl font-bold">Kepi sbr. Blok M Plaza</h1>
+              <p class="text-base">
+                Jl. Bulungan No.76, RT.6/RW.6, Kramat Pela, Kec. Kby. Baru, Kota
+                Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="lc-card -rotate-5">
+            <img
+              src="/src/images/binplaz.png"
+              alt=""
+              class="w-full h-[300px] object-cover"
+            />
+            <div class="flex flex-col p-[15px] text-center gap-2.2">
+              <h1 class="text-2xl font-bold">Kepi Bintaro Plaza</h1>
+              <p class="text-base">
+                Jl. Boulevard Bintaro Jaya No.1, Parigi, Kec. Pd. Aren, Kota
+                Tangerang Selatan, Banten 15227
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="lc-card">
+            <img
+              src="/src/images/budiluhur.png"
+              alt=""
+              class="w-full h-[300px] object-cover"
+            />
+            <div class="flex flex-col p-[15px] text-center gap-2.2">
+              <h1 class="text-2xl font-bold">Kepi sbr. Univ. Budi Luhur</h1>
+              <p class="text-base">
+                Jl. Inpres Raya No.40, RT.001/RW.005, Larangan Utara, Kec.
+                Larangan, Kota Tangerang, Banten 15154
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="lc-card rotate-5">
+            <img src="/src/images/gambir.png" alt="" class="w-full h-[300px]" />
+            <div class="flex flex-col p-[15px] text-center gap-2.2">
+              <h1 class="text-2xl font-bold">Kepi sbr. Stasiun Gambir</h1>
+              <p class="text-base">
+                Jl. Medan Merdeka Tim. No.1, Gambir, Kecamatan Gambir, Kota
+                Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER: ALBAR (JANGAN DIGANGGU) -->
+    <footer
+      class="flex lg:flex-row flex-col justify-between items-center p-7 lg:p-[50px] lg:pb-0 gap-7 lg:gap-[50px] text-center lg:text-left bg-primary"
+    >
+      <img
+        src="/src/images/kepi_original_y.png"
+        alt="KOPI Teks"
+        class="w-[70px] h-full hidden lg:block"
+      />
+      <img
+        src="/src/images/kepi_original.png"
+        alt="KOPI Teks"
+        class="w-auto h-[70px] lg:hidden"
+      />
+      <div
+        class="w-full flex lg:flex-row flex-col items-center lg:items-start self-stretch gap-7"
+      >
+        <div class="flex flex-col gap-4 w-[286px] h-full flex-shrink-0">
+          <h1 class="font-wst text-[50px] text-box-trimmed">
+            Customer Service
+          </h1>
+          <h2>
+            Jl. Senen Raya No.135, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah
+            Khusus Ibukota Jakarta 10410
+          </h2>
+          <h2>0812-3483-2930</h2>
+        </div>
+        <div
+          class="w-full h-full flex flex-col justify-between items-end gap-7 lg:gap-0"
+        >
+          <div
+            class="flex lg:flex-row flex-col w-full justify-between items-center self-stretch gap-7 lg:gap-0"
+          >
+            <ul class="flex flex-col gap-3 w-full items-center">
+              <li><a href="#tentang">Tentang</a></li>
+              <li><a href="#menu">Menu Kepi</a></li>
+              <li><a href="#kata-sahabat">Kata Sahabat Tepi</a></li>
+              <li><a href="#lokasi">Our Locations</a></li>
+            </ul>
+            <div
+              class="w-max lg:w-full h-full flex flex-col gap-3 justify-center items-center"
+            >
+              <h1 class="font-wst text-[50px] leading-none text-box-trimmed">
+                Jangan Lupa Menepi!
+              </h1>
+              <span class="flex items-center gap-2.5 w-full lg:w-[60%]">
+                <img class="w-5 h-full" src="/src/images/yt-dark.png" alt="" />
+                <span class="lines-full border-secondary"></span>
+                <img class="w-5 h-full" src="/src/images/ig-dark.png" alt="" />
+                <span class="lines-full border-secondary"></span>
+                <img class="w-5 h-full" src="/src/images/tt-dark.png" alt="" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="w-full flex-wrap font-bold p-[30px] font-sts text-xs uppercase gap-2.5 lg:gap-9 flex content-center items-center justify-center bg-primary"
+    >
+      <a href="#">&copy; 2025 KopiTepi Team</a>
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat & Ketentuan</a>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

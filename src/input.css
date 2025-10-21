@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fwMT: 0.56;
+  --fwMB: 0.25;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: Satoshi;
+  src: url("/src/fonts/Satoshi-Variable.woff2");
+}
+@font-face {
+  font-family: Westgate;
+  src: url("/src/fonts/Westgate-Bold.woff2");
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.lines-full {
+  @apply w-full border-1 border-solid;
+}
+.lines-edge {
+  @apply w-[50px] border-1 border-solid;
+}
+/* UNUSED (DON'T REMOVE) */
+/* .westgate-ch {
+  margin-top: calc(var(--fs, --fs2) * var(--fwMT) * -1);
+  margin-bottom: calc(var(--fs, --fs2) * var(--fwMB) * -1);
+  font-size: var(--fs);  
+} */
+
+.navbar {
+  @apply transition-all duration-500 w-full flex justify-between items-start fixed;
+}
+.logoScrolled {
+  @apply translate-x-5 translate-y-5;
+}
+.navScrolled {
+  @apply translate-y-5 -translate-x-5 bg-accent/70 backdrop-blur-sm border-1 border-solid border-primary rounded-3xl lg:h-full px-2.5;
+}
+
+.tm-card {
+  @apply flex flex-col justify-between w-[310px] lg:w-[330px] h-[350px] p-5 pt-0 text-center bg-primary border-1 border-solid border-secondary rounded-tm rounded-br-none flex-shrink-0 hover:scale-105 hover:rotate-2 transition-[scale,transform] duration-100;
+}
+.tm-text {
+  @apply text-base text-secondary line-clamp-6;
+}
+
+.lc-card {
+  @apply relative bg-primary w-[325px] lg:w-[335px] border-1 border-solid border-secondary rounded-[20px] z-0 overflow-hidden flex-shrink-0 -mr-[30px] hover:z-[2] hover:scale-105 duration-100 hover:cursor-pointer;
+}
+
+.menu-item {
+  @apply p-4 border border-secondary rounded-xl cursor-pointer transition-all duration-100 bg-primary hover:bg-accent active:bg-accent hover:text-white hover:border-accent flex flex-col justify-between gap-2;
+}
